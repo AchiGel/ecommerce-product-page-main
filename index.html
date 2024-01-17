@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="burger-menu-overlay">
+      <div class="burger-menu-modal">
+        <img src="./images/icon-close.svg" alt="" />
+        <ul>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal-overlay">
+      <div class="modal">
+        <button class="arrow previous">
+          <img src="./images/icon-previous.svg" alt="" />
+        </button>
+        <img class="closeBtn" src="./images/icon-close.svg" alt="" />
+        <div class="image-slider-modal">
+          <img
+            class="main-image-modal"
+            src="./images/image-product-1.jpg"
+            alt="main image modal"
+          />
+          <div class="other-images-modal">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="" />
+            <img src="./images/image-product-2-thumbnail.jpg" alt="" />
+            <img src="./images/image-product-3-thumbnail.jpg" alt="" />
+            <img src="./images/image-product-4-thumbnail.jpg" alt="" />
+          </div>
+        </div>
+        <button class="arrow next">
+          <img src="./images/icon-next.svg" alt="" />
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <header>
+        <img id="burgerMenu" src="./images/icon-menu.svg" alt="burgerMenu" />
+        <a href="#" class="header-logo"
+          ><img src="./images/logo.svg" alt="Logo"
+        /></a>
+        <ul>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="cartContainer">
+          <div class="cartContainerAfter"></div>
+          <img class="cart" src="./images/icon-cart.svg" alt="Cart icon" />
+        </div>
+        <div class="cart-modal">
+          <h2>Cart</h2>
+          <div class="cart-modal-items"><span>Your cart is empty.</span></div>
+        </div>
+        <img class="avatar" src="./images/image-avatar.png" alt="avatar" />
+      </header>
+      <main>
+        <div class="image-slider-mobile">
+          <div class="previous-button btn"></div>
+          <div class="img-box">
+            <img src="./images/image-product-1.jpg" alt="" />
+          </div>
+          <div class="next-button btn"></div>
+        </div>
+        <div class="image-slider">
+          <img
+            class="main-image"
+            src="./images/image-product-1.jpg"
+            alt="main image"
+          />
+          <div class="other-images">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="" />
+            <img src="./images/image-product-2-thumbnail.jpg" alt="" />
+            <img src="./images/image-product-3-thumbnail.jpg" alt="" />
+            <img src="./images/image-product-4-thumbnail.jpg" alt="" />
+          </div>
+        </div>
+        <div class="text-container">
+          <h4>Sneaker Company</h4>
+          <h2>Fall Limited Edition Sneakers</h2>
+          <p>
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <div class="price-box">
+            <span class="current-price">$125.00</span>
+            <span class="discount">50%</span>
+            <span class="previous-price">$250.00</span>
+          </div>
+
+          <div class="add-to-cart">
+            <div class="quantity">
+              <img src="./images/icon-minus.svg" alt="" />
+              <span>0</span>
+              <img src="./images/icon-plus.svg" alt="" />
+            </div>
+            <button>Add to cart</button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">AchiGel</a>.
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
